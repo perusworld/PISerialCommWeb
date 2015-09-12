@@ -2,14 +2,14 @@ extends layout
 
 block content
   h1= title
-  .panel.panel-default
+  .panel.panel-primary
     .panel-heading Send a message through Serial
     .panel-body
       form.form-inline(action='/send', method='POST')
         .form-group
           input.form-control(type='text',name='msg',placeholder="Message")
         button.btn.btn-default(type='submit') Send
-  .panel.panel-default
+  .panel.panel-info
     .panel-heading Logs
     .panel-body
       table.table.table-striped
