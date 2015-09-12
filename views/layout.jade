@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    title= title + '| PISerialCommWeb'
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+body
+
+    nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') PISerialCommWeb
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li.active
+                        a(href='/') Home
+                    li
+                        a(href='/refresh') Refresh
+    .container.theme-showcase
+      .page-header
+        h1 PISerialCommWeb 
+          small Raspberry PI Serial Communication Library Tester App
+    .container
+        block content
+
+    script(src='/scripts/jquery.min.js')
+    script(src='/scripts/bootstrap.min.js')
+
+
